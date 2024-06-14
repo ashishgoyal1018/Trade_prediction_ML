@@ -14,7 +14,10 @@ import os
 os.getcwd()
 
 #os.chdir('C:\\Users\\Lenovo\\Downloads')
-loaded_model = pickle.load('trained_model.sav','rb')
+#loaded_model = pickle.load('trained_model.sav','rb')
+
+with open('trained_model.sav', 'rb') as file:
+        loaded_model = pickle.load(file)
 
 def trade_prediction(input_data):
 # changing the input_data to numpy array
