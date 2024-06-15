@@ -16,8 +16,13 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
 #os.chdir('D:\\ASTA_Trading\\Trade_experience\\9_Trading_model_Log_reg')
 #loaded_model = pickle.load('trained_model.sav','rb')
-loaded_model= pickle.load(open('trained_model.sav', 'rb'))
-
+try:
+    with open('trained_model.sav', 'rb') as file:
+        loaded_model= pickle.load(file)
+    model_loaded = True
+except Exception as e:
+    st.error(f"Error loading model: {e}")
+    model_loaded = False
 
 def trade_prediction(input_data):
 # changing the input_data to numpy array
