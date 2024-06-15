@@ -4,7 +4,6 @@ pickle-mixin
 pip
 py
 scikit-learn
-sklearn.ensemble
 scipy
 seaborn
 spyder
