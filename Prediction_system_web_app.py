@@ -16,9 +16,11 @@ os.getcwd()
 
 #os.chdir('D:\\ASTA_Trading\\Trade_experience\\9_Trading_model_Log_reg')
 #loaded_model = pickle.load('trained_model.sav','rb')
-
-with open('trained_model.sav','rb') as file:
+try:
+    with open('trained_model.sav', 'rb') as file:
         loaded_model = pickle.load(file)
+except Exception as e:
+    st.error(f"Error loading model: {e}")
 
 def trade_prediction(input_data):
 # changing the input_data to numpy array
