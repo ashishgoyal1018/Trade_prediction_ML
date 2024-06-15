@@ -127,11 +127,11 @@ def main():
     Predict = ''
 
     if st.button('Trade prediction result'):
-        Predict = trade_prediction(input_data_scaled[0][0], Day_encoded, Symbol_encoded, Time_Frame_encoded, 
+        Predict = trade_prediction([[input_data_scaled[0][0], Day_encoded, Symbol_encoded, Time_Frame_encoded, 
                   input_data_scaled[0][1], input_data_scaled[0][2], Distribution_0_yes_1_no_encoded, 
                   input_data_scaled[0][3], Trend_Day_Chart_1_Bullish_0_Bearish_encoded, 
                   Trend_1hr_Chart_1_Bullish_0_Bearish_encoded, Gap_up_0_down_1_encoded, 
-                  Twice_high_volume_0_Yes_1_No_encoded)
+                  Twice_high_volume_0_Yes_1_No_encoded]])
 
     st.success(Predict)
 
