@@ -11,6 +11,11 @@ import streamlit as st
 import pickle
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
+from sklearn import tree
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
+
 #import os
 #os.getcwd()
 
