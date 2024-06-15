@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 import os
 os.getcwd()
 
-os.chdir('D:\\ASTA_Trading\\Trade_experience\\9_Trading_model_Log_reg')
+#os.chdir('D:\\ASTA_Trading\\Trade_experience\\9_Trading_model_Log_reg')
 #loaded_model = pickle.load('trained_model.sav','rb')
 
 with open('trained_model.sav','rb') as file:
