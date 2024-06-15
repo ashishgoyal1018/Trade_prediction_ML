@@ -18,7 +18,7 @@ os.getcwd()
 #loaded_model = pickle.load('trained_model.sav','rb')
 try:
     with open('trained_model.sav', 'rb') as file:
-        loaded_model = pickle.load(file)
+        loaded_model= pickle.load(file)
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
@@ -37,7 +37,6 @@ def trade_prediction(input_data):
    else:
         return'The trade has more than 85% chances of hitting the stoploss'
   
-
 def main():
     st.title('Day Trade Prediction ML Model')
     
