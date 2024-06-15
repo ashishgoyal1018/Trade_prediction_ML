@@ -106,32 +106,15 @@ def main():
     input_data_unscaled = [[Date_2, int(Time_of_BC_candle_hr_2), Time_of_BC_candle_min_2, India_Vix_2]]
     input_data_scaled = scaler_minmax.transform(input_data_unscaled)
 
-    # Combine all features into one list
-    #input_data_2 = [input_data_scaled[0][0], Day_encoded, Symbol_encoded, Time_Frame_encoded, 
-            #      input_data_scaled[0][1], input_data_scaled[0][2], Distribution_0_yes_1_no_encoded, 
-             #     input_data_scaled[0][3], Trend_Day_Chart_1_Bullish_0_Bearish_encoded, 
-            #      Trend_1hr_Chart_1_Bullish_0_Bearish_encoded, Gap_up_0_down_1_encoded, 
-             #     Twice_high_volume_0_Yes_1_No_encoded]
 
-
-   # Date_scaled = scaler_minmax.transform([[Date]])
-    #Time_of_BC_candle_hr_scaled = scaler_minmax.transform([[Time_of_BC_candle_hr]])
-    #Time_of_BC_candle_min_scaled = scaler_minmax.transform([[Time_of_BC_candle_min]])
-    #India_Vix_scaled = scaler_minmax.transform([[India_Vix]])
-
-      #  def clean_Date(Date):
-   # Date_scaled = scaler_minmax.transform(np.array([[Date]]))
-  #  Time_of_BC_candle_hr_scaled = scaler_minmax.transform(np.array([[Time_of_BC_candle_hr]]))
-   # Time_of_BC_candle_min_scaled = scaler_minmax.transform(np.array([[Time_of_BC_candle_min]]))
-  #  India_Vix_scaled = scaler_minmax.transform(np.array([[India_Vix]]))
     Predict = ''
+    input_data = [input_data_scaled[0][0], Day_encoded, Symbol_encoded, Time_Frame_encoded,input_data_scaled[0][1], input_data_scaled[0][2],Distribution_0_yes_1_no_encoded,input_data_scaled[0][3], Trend_Day_Chart_1_Bullish_0_Bearish_encoded,Trend_1hr_Chart_1_Bullish_0_Bearish_encoded, Gap_up_0_down_1_encoded,Twice_high_volume_0_Yes_1_No_encoded]
+
+    st.write(f"Input data: {input_data}")
 
     if st.button('Trade prediction result'):
-        Predict = trade_prediction([[input_data_scaled[0][0], Day_encoded, Symbol_encoded, Time_Frame_encoded, 
-                  input_data_scaled[0][1], input_data_scaled[0][2], Distribution_0_yes_1_no_encoded, 
-                  input_data_scaled[0][3], Trend_Day_Chart_1_Bullish_0_Bearish_encoded, 
-                  Trend_1hr_Chart_1_Bullish_0_Bearish_encoded, Gap_up_0_down_1_encoded, 
-                  Twice_high_volume_0_Yes_1_No_encoded]])
+        prediction_result = trade_prediction(input_data)
+        st.success(prediction_result)
 
     st.success(Predict)
 
