@@ -4,6 +4,7 @@ pickle-mixin
 pip
 py
 scikit-learn
+sklearn.ensemble import RandomForestClassifier
 scipy
 seaborn
 spyder
