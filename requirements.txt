@@ -3,10 +3,10 @@ pandas
 pickle-mixin
 pip
 py
-scikit-learn
+scikit-learn==0.24.2
 scipy
 seaborn
 spyder
 spyder-kernels
 statsmodels
-streamlit
+streamlit==0.87.0
