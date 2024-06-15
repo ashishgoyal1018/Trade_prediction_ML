@@ -93,7 +93,7 @@ def main():
     data=pd.read_csv("5_Model_log_reg_Buying_Climax_14062024_scaled.csv")
   #  numerical_cols = ['Date', 'Time_of_BC_candle_hr','Time_of_BC_candle_min', 'India_Vix']
         
-    scaler_minmax = MinMaxScaler()
+  #  scaler_minmax = MinMaxScaler()
  #  data[numerical_cols] = scaler_minmax.fit_transform(data[numerical_cols])
    # scaler_minmax.fit(data[numerical_cols]) 
 #        return data
