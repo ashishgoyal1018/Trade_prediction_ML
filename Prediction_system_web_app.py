@@ -17,7 +17,7 @@ from sklearn.preprocessing import MinMaxScaler
 #os.chdir('D:\\ASTA_Trading\\Trade_experience\\9_Trading_model_Log_reg')
 #loaded_model = pickle.load('trained_model.sav','rb')
 try:
-    with open('trained_model_dt.sav', 'rb') as file:
+    with open('trained_model.sav', 'rb') as file:
         loaded_model= pickle.load(file)
     model_loaded = True
 except Exception as e:
