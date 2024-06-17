@@ -72,7 +72,7 @@ def main():
     Distribution_0_yes_1_no_encoded_= {"Yes":0, "No":1}
     Distribution_0_yes_1_no_encoded= Distribution_0_yes_1_no_encoded_[Distribution_0_yes_1_no]
 
-    India_Vix_2= st.number_input('Enter the India Vix at time of trade',min_value=13,max_value=26,value=19,step=0.1)
+    India_Vix_2= st.number_input('Enter the India Vix at time of trade',min_value=13,max_value=26,value=19,step=0.1,format='%.1f')
     
     dropdown_options_6= ["Bullish", "Bearish","Neutral"]
     Trend_Day_Chart_1_Bullish_0_Bearish= st.selectbox("Trend in Day chart", dropdown_options_6)
