@@ -9,7 +9,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import pickle
-from joblib import load
 from sklearn.preprocessing import MinMaxScaler
 
 #import os
