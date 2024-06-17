@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import pickle
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler
 
 #import os
 #os.getcwd()
