@@ -122,7 +122,7 @@ def main():
         st.success(prediction_result)
 
     st.success(Predict)
-    st.image('Chart_Pattern.png', caption='Chart Pattern', use_column_width=True)
     st.markdown('Contact: [LinkedIn](https://www.linkedin.com/in/ashishgoyal1018)')
+    st.image('Chart_Pattern.png', caption='Chart Pattern', use_column_width=True)
 if __name__== '__main__':
     main()
