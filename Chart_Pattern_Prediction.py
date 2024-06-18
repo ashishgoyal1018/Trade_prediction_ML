@@ -122,6 +122,7 @@ def main():
         st.success(prediction_result)
 
     st.success(Predict)
-
+    st.image('path_to_your_image.jpg', caption='Your Image Caption', use_column_width=True)
+    st.markdown('Contact: [LinkedIn](https://www.linkedin.com/in/ashishgoyal1018)')
 if __name__== '__main__':
     main()
