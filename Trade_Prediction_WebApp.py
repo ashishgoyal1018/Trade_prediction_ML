@@ -36,7 +36,7 @@ def trade_prediction(input_data):
         print(prediction)
 
         if (prediction[0] == 0):
-            return'The trade has more than 75% chances of hitting the target'
+            return'The trade has more than 70% chances of hitting the target'
         else:
             return'The trade has more than 75% chances of hitting the stoploss'
     except Exception as e:
