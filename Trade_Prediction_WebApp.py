@@ -44,7 +44,7 @@ def trade_prediction(input_data):
         return None
 
 def main():
-    st.title('Chart Pattern Profitability Prediction')
+    st.title('Breakout Reversal Profitability Prediction')
     
     Date_2= st.number_input('Enter Date of trade',min_value=1,max_value=31,value=15)
     
